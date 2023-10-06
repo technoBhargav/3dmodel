@@ -116,93 +116,90 @@ import * as THREE from "three";
 // }
 
 // Model 3
-export function Model(props) {
-const { nodes, materials } = useGLTF("man_in_suit/scene.gltf");
+// export function Model(props) {
+// const { nodes, materials } = useGLTF("man_in_suit/scene.gltf");
 
-  // Load textures and set up materials
-  const textureLoader = new THREE.TextureLoader();
-  const texture1 = textureLoader.load("186_big.jpg");
-//   const texture2 = textureLoader.load("3321_huge.jpg");
-//   const texture3 = textureLoader.load("3425_huge.jpg");
-//   const texture1 = textureLoader.load("#000000");
-    const texture2 = textureLoader.load("2251_huge.jpg");
-    const texture3 = textureLoader.load("2823_huge.jpg");
-    const texture4 = textureLoader.load("3167_huge.jpg");
+//   // Load textures and set up materials
+//   const textureLoader = new THREE.TextureLoader();
+//   const texture1 = textureLoader.load("186_big.jpg");
+//     const texture2 = textureLoader.load("2251_huge.jpg");
+//     const texture3 = textureLoader.load("2823_huge.jpg");
+//     const texture4 = textureLoader.load("3167_huge.jpg");
 
-  // Create materials with textures
-  const customMaterial1 = new THREE.MeshStandardMaterial({ map: texture4 });
-  const customMaterial2 = new THREE.MeshStandardMaterial({ map: texture2 });
-  const customMaterial3 = new THREE.MeshStandardMaterial({ map: texture3 });
+//   // Create materials with textures
+//   const customMaterial1 = new THREE.MeshStandardMaterial({ map: texture3 });
+//   const customMaterial2 = new THREE.MeshStandardMaterial({ map: texture4 });
+//   const customMaterial3 = new THREE.MeshStandardMaterial({ map: texture1 });
 
-  return (
-    // your jsx code...
-    <group {...props} dispose={null}>
-      <group
-        rotation={[-Math.PI / 2, 0, 0]}
-        scale={0.025}
-        position={[0.3, -2.5, -0.3]}
-      >
-        <mesh
-          geometry={nodes.man_in_suit_suit_0.geometry}
-          material={customMaterial2}
-        />
-        <mesh
-          geometry={nodes.man_in_suit_shirt_0.geometry}
-          material={customMaterial3}
-        />
-        <mesh
-          geometry={nodes.man_in_suit_tie_0.geometry}
-          material={customMaterial1}
-        />
-        <mesh
-          geometry={nodes.man_in_suit_leather_0.geometry}
-          material={materials.leather}
-        />
-        <mesh
-          geometry={nodes.man_in_suit_sole_0.geometry}
-          material={materials.sole}
-        />
-        <mesh
-          geometry={nodes.man_in_suit_skin_0.geometry}
-          material={materials.skin}
-        />
-        <mesh
-          geometry={nodes["man_in_suit_Material_#128_0"].geometry}
-          material={materials.Material_128}
-        />
-        <mesh
-          geometry={nodes.man_in_suit_circle_0.geometry}
-          material={materials.circle}
-        />
-        <mesh
-          geometry={nodes.man_in_suit_belt_part_0.geometry}
-          material={materials.belt_part}
-        />
-        <mesh
-          geometry={nodes.man_in_suit_button_0.geometry}
-          material={customMaterial3}
-        />
-        <mesh
-          geometry={nodes.man_in_suit_lips_0.geometry}
-          material={materials.lips}
-        />
-        <mesh
-          geometry={nodes.man_in_suit_hair_0.geometry}
-          material={materials.hair}
-        />
-        <mesh
-          geometry={nodes.man_in_suit_eye_mat3_0.geometry}
-          material={materials.eye_mat3}
-        />
-        <mesh
-          geometry={nodes.man_in_suit_eye_mat2_0.geometry}
-          material={materials.eye_mat2}
-        />
-        <mesh
-          geometry={nodes.man_in_suit_eye_mat1_0.geometry}
-          material={materials.eye_mat1}
-        />
-      </group>
-    </group>
-  );
-}
+//   return (
+//     // your jsx code...
+//     <group {...props} dispose={null}>
+//       <group
+//         rotation={[-Math.PI / 2, 0, 0]}
+//         scale={0.025}
+//         position={[0.3, -2.5, -0.3]}
+//       >
+//         <mesh
+//           geometry={nodes.man_in_suit_suit_0.geometry}
+//           material={customMaterial2}
+//         />
+//         <mesh
+//           geometry={nodes.man_in_suit_shirt_0.geometry}
+//           material={customMaterial3}
+//         />
+//         <mesh
+//           geometry={nodes.man_in_suit_tie_0.geometry}
+//           material={customMaterial1}
+//         />
+//         <mesh
+//           geometry={nodes.man_in_suit_leather_0.geometry}
+//           material={materials.leather}
+//         />
+//         <mesh
+//           geometry={nodes.man_in_suit_sole_0.geometry}
+//           material={materials.sole}
+//         />
+//         <mesh
+//           geometry={nodes.man_in_suit_skin_0.geometry}
+//           material={materials.skin}
+//         />
+//         <mesh
+//           geometry={nodes["man_in_suit_Material_#128_0"].geometry}
+//           material={materials.Material_128}
+//         />
+//         <mesh
+//           geometry={nodes.man_in_suit_circle_0.geometry}
+//           material={materials.circle}
+//         />
+//         <mesh
+//           geometry={nodes.man_in_suit_belt_part_0.geometry}
+//           material={materials.belt_part}
+//         />
+//         <mesh
+//           geometry={nodes.man_in_suit_button_0.geometry}
+//           material={customMaterial3}
+//         />
+//         <mesh
+//           geometry={nodes.man_in_suit_lips_0.geometry}
+//           material={materials.lips}
+//         />
+//         <mesh
+//           geometry={nodes.man_in_suit_hair_0.geometry}
+//           material={materials.hair}
+//         />
+//         <mesh
+//           geometry={nodes.man_in_suit_eye_mat3_0.geometry}
+//           material={materials.eye_mat3}
+//         />
+//         <mesh
+//           geometry={nodes.man_in_suit_eye_mat2_0.geometry}
+//           material={materials.eye_mat2}
+//         />
+//         <mesh
+//           geometry={nodes.man_in_suit_eye_mat1_0.geometry}
+//           material={materials.eye_mat1}
+//         />
+//       </group>
+//     </group>
+//   );
+// }
